@@ -19,6 +19,9 @@ module.exports = {
   ignorePatterns: "build",
   rules: {
     "prettier/prettier": "error",
-    "simple-import-sort/sort": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { args: "after-used", argsIgnorePattern: "^next$" },
+    ],
   },
 };
