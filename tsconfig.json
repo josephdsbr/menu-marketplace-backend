@@ -6,6 +6,7 @@
     "strict": false,
     "allowJs": true,
     "rootDir": "src",
+    "outDir": "dist",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
@@ -13,9 +14,5 @@
   "include": [
     "src/**/*.ts"
   ],
-  "exclude": ["coverage", "**/__tests__"],
-  "files": [
-    "outDir",
-    "build"
-  ]
+  "exclude": ["coverage", "**/__tests__"]
 }

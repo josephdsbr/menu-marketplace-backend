@@ -2,8 +2,11 @@
   "name": "menu-marketplace-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/server.js",
   "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "dev": "ts-node-dev --respawn --transpile-only --inspect -- ./src/server.ts",
+    "lint": "eslint --fix --ext .js,.ts,.json .",
     "test": "jest"
   },
   "keywords": [],
